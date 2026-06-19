@@ -1,0 +1,23 @@
+---
+# developer records
+name: vikram singh
+job: software engineer
+level: 61
+skills:
+  - python
+  - java
+  - c++
+  - javascript
+experience: 6 years
+projects:
+  - name: project alpha
+    description: a web application for managing tasks
+    technologies:
+      - django
+      - react
+      - postgresql
+  - name: project beta
+    description: a mobile app for fitness tracking
+    technologies:
+      - flutter
+      - firebase
