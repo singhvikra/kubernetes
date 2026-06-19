@@ -1,0 +1,44 @@
+# Kubernetes / kubeconfig
+kubeconfig
+*.kubeconfig
+.kube/
+admin.conf
+
+# Secrets & credentials — never commit these
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets.yaml
+secret.yaml
+*-secret.yaml
+.env
+.env.*
+
+# Helm
+charts/*.tgz
+**/charts/*.tgz
+*.lock
+
+# Local tooling state
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs & temp
+*.log
+tmp/
+.tmp/
