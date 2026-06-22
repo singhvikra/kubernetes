@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox-deployment
+  namespace: default
+  labels:
+    app: busybox-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: busybox-app
+  template:
+    metadata:
+      labels:
+        app: busybox-app
+    spec:
+      containers:
+        - name: busybox-container
+          image: busybox:latest
+          # Keep the container running
+          command: ["/bin/sh", "-c", "--"]
+          args: ["while true; do sleep 30; done;"]
+          resources:
+            requests:
+              cpu: 30m
+              memory: 64Mi
+            limits:
+              cpu: 100m
+              memory: 128Mi
